@@ -10,6 +10,8 @@ void gpio_item_configure_all_pins(GpioMode mode);
 
 void gpio_item_set_pin(uint8_t index, bool level);
 
+const char* gpio_item_read_pin(uint8_t index);
+
 void gpio_item_set_all_pins(bool level);
 
 const char* gpio_item_get_pin_name(uint8_t index);

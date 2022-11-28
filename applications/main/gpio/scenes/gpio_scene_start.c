@@ -6,6 +6,7 @@
 enum GpioItem {
     GpioItemUsbUart,
     GpioItemTest,
+    GpioItemRead,
     GpioItemOtg,
 };
 
@@ -25,6 +26,8 @@ static void gpio_scene_start_var_list_enter_callback(void* context, uint32_t ind
     GpioApp* app = context;
     if(index == GpioItemTest) {
         view_dispatcher_send_custom_event(app->view_dispatcher, GpioStartEventManualControl);
+    } else if(index == GpioItemRead) {
+        view_dispatcher_send_custom_event(app->view_dispatcher, GpioStartEventMonitor);
     } else if(index == GpioItemUsbUart) {
         view_dispatcher_send_custom_event(app->view_dispatcher, GpioStartEventUsbUart);
     }
@@ -53,6 +56,8 @@ void gpio_scene_start_on_enter(void* context) {
     variable_item_list_add(var_item_list, "USB-UART Bridge", 0, NULL, NULL);
 
     variable_item_list_add(var_item_list, "GPIO Manual Control", 0, NULL, NULL);
+
+    variable_item_list_add(var_item_list, "GPIO Monitor", 0, NULL, NULL);
 
     item = variable_item_list_add(
         var_item_list,
@@ -86,6 +91,9 @@ bool gpio_scene_start_on_event(void* context, SceneManagerEvent event) {
         } else if(event.event == GpioStartEventManualControl) {
             scene_manager_set_scene_state(app->scene_manager, GpioSceneStart, GpioItemTest);
             scene_manager_next_scene(app->scene_manager, GpioSceneTest);
+        } else if(event.event == GpioStartEventMonitor) {
+            scene_manager_set_scene_state(app->scene_manager, GpioSceneStart, GpioItemRead);
+            scene_manager_next_scene(app->scene_manager, GpioSceneRead);
         } else if(event.event == GpioStartEventUsbUart) {
             scene_manager_set_scene_state(app->scene_manager, GpioSceneStart, GpioItemUsbUart);
             if(!furi_hal_usb_is_locked()) {

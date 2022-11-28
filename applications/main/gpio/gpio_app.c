@@ -51,6 +51,10 @@ GpioApp* gpio_app_alloc() {
     view_dispatcher_add_view(
         app->view_dispatcher, GpioAppViewGpioTest, gpio_test_get_view(app->gpio_test));
 
+    app->gpio_read = gpio_read_alloc();
+    view_dispatcher_add_view(
+        app->view_dispatcher, GpioAppViewGpioRead, gpio_read_get_view(app->gpio_read));
+
     app->widget = widget_alloc();
     view_dispatcher_add_view(
         app->view_dispatcher, GpioAppViewUsbUartCloseRpc, widget_get_view(app->widget));
@@ -75,6 +79,7 @@ void gpio_app_free(GpioApp* app) {
     // Views
     view_dispatcher_remove_view(app->view_dispatcher, GpioAppViewVarItemList);
     view_dispatcher_remove_view(app->view_dispatcher, GpioAppViewGpioTest);
+    view_dispatcher_remove_view(app->view_dispatcher, GpioAppViewGpioRead);
     view_dispatcher_remove_view(app->view_dispatcher, GpioAppViewUsbUart);
     view_dispatcher_remove_view(app->view_dispatcher, GpioAppViewUsbUartCfg);
     view_dispatcher_remove_view(app->view_dispatcher, GpioAppViewUsbUartCloseRpc);

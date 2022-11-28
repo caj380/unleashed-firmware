@@ -14,6 +14,7 @@
 #include <gui/modules/variable_item_list.h>
 #include <gui/modules/widget.h>
 #include "views/gpio_test.h"
+#include "views/gpio_read.h"
 #include "views/gpio_usb_uart.h"
 #include <assets_icons.h>
 
@@ -27,6 +28,7 @@ struct GpioApp {
     VariableItemList* var_item_list;
     VariableItem* var_item_flow;
     GpioTest* gpio_test;
+    GpioRead* gpio_read;
     GpioUsbUart* gpio_usb_uart;
     UsbUartBridge* usb_uart_bridge;
 };
@@ -34,6 +36,7 @@ struct GpioApp {
 typedef enum {
     GpioAppViewVarItemList,
     GpioAppViewGpioTest,
+    GpioAppViewGpioRead,
     GpioAppViewUsbUart,
     GpioAppViewUsbUartCfg,
     GpioAppViewUsbUartCloseRpc,
