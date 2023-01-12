@@ -86,7 +86,6 @@ Also, regarding our releases, every build has and always will be free and open-s
 You can support us by using links or addresses below:
 * Boosty: https://boosty.to/mmxdev
 * Ko-Fi: https://ko-fi.com/masterx
-* destream (100 EUR min): https://destream.net/live/MMX/donate
 * cloudtips (only RU payments accepted): https://pay.cloudtips.ru/p/7b3e9d65
 * YooMoney (only RU payments accepted): https://yoomoney.ru/fundraise/XA49mgQLPA0.221209
 * USDT(TRC20): `TSXcitMSnWXUFqiUfEXrTVpVewXy2cYhrs`
@@ -100,9 +99,9 @@ You can support us by using links or addresses below:
 
 ### Community apps included:
 
-- RFID Fuzzer plugin [(by Ganapati & @xMasterX)](https://github.com/DarkFlippers/unleashed-firmware/pull/54) & New protocols by @mvanzanten
-- Sub-GHz bruteforce plugin [(by @derskythe & xMasterX)](https://github.com/derskythe/flipperzero-subbrute) [(original by Ganapati & xMasterX)](https://github.com/DarkFlippers/unleashed-firmware/pull/57)
-- Sub-GHz playlist plugin [(by darmiel)](https://github.com/DarkFlippers/unleashed-firmware/pull/62)
+- **RFID Fuzzer** [(by Ganapati & @xMasterX)](https://github.com/DarkFlippers/unleashed-firmware/pull/54) & New protocols by @mvanzanten
+- **Sub-GHz bruteforcer** [(by @derskythe & xMasterX)](https://github.com/derskythe/flipperzero-subbrute) [(original by Ganapati & xMasterX)](https://github.com/DarkFlippers/unleashed-firmware/pull/57)
+- **Sub-GHz playlist** [(by darmiel)](https://github.com/DarkFlippers/unleashed-firmware/pull/62)
 - ESP8266 Deauther plugin [(by SequoiaSan)](https://github.com/SequoiaSan/FlipperZero-Wifi-ESP8266-Deauther-Module)
 - WiFi Scanner plugin [(by SequoiaSan)](https://github.com/SequoiaSan/FlipperZero-WiFi-Scanner_Module)
 - MultiConverter plugin [(by theisolinearchip)](https://github.com/theisolinearchip/flipperzero_stuff)
@@ -113,19 +112,18 @@ You can support us by using links or addresses below:
 - ESP32: WiFi Marauder companion plugin [(by 0xchocolate)](https://github.com/0xchocolate/flipperzero-firmware-with-wifi-marauder-companion)
 - NRF24: Sniffer & MouseJacker (with changes) [(by mothball187)](https://github.com/mothball187/flipperzero-nrf24/tree/main/mousejacker)
 - Simple Clock (timer by GMMan / settings by kowalski7cc) [(original by CompaqDisc)](https://gist.github.com/CompaqDisc/4e329c501bd03c1e801849b81f48ea61)
-- UniversalRF Remix / Sub-GHz Remote [(by @darmiel & @xMasterX)](https://github.com/darmiel/flipper-playlist/tree/feat/unirf-protocols) (original by @ESurge)
+- **Sub-GHz Remote** (UniversalRF Remix) [(by @darmiel & @xMasterX)](https://github.com/darmiel/flipper-playlist/tree/feat/unirf-protocols) (original by @ESurge)
 - Spectrum Analyzer (with changes) [(by jolcese)](https://github.com/jolcese/flipperzero-firmware/tree/spectrum/applications/spectrum_analyzer) - [Ultra Narrow mode & scan channels non-consecutively](https://github.com/theY4Kman/flipperzero-firmware/commits?author=theY4Kman)
 - Metronome [(by panki27)](https://github.com/panki27/Metronome)
 - DTMF Dolphin [(by litui)](https://github.com/litui/dtmf_dolphin)
 - **TOTP (Authenticator)** [(by akopachov)](https://github.com/akopachov/flipper-zero_authenticator)
 - GPS [(by ezod)](https://github.com/ezod/flipperzero-gps) works with module `NMEA 0183` via UART (13TX, 14RX, GND pins on Flipper)
 - i2c Tools [(by NaejEL)](https://github.com/NaejEL/flipperzero-i2ctools) - C0 -> SCL / C1 -> SDA / GND -> GND | 3v3 logic levels only!
-- Temperature Sensor Plugin - HTU2xD, SHT2x, SI702x, SI700x, SI701x, AM2320 [(by Mywk)](https://github.com/Mywk/FlipperTemperatureSensor) - [How to Connect](https://github.com/DarkFlippers/unleashed-firmware/blob/dev/applications/plugins/htu21d_temp_sensor/Readme.md)
 - HC-SR04 Distance sensor - Ported and modified by @xMasterX [(original by Sanqui)](https://github.com/Sanqui/flipperzero-firmware/tree/hc_sr04) - How to connect -> (5V -> VCC) / (GND -> GND) / (13|TX -> Trig) / (14|RX -> Echo)
 - Morse Code [(by wh00hw)](https://github.com/wh00hw/MorseCodeFAP)
-- (UniTemp) Temp sensor reader [(by quen0n)](https://github.com/quen0n/unitemp-flipperzero)
+- **Unitemp - Temperature sensors reader** (DHT11/22, DS18B20, BMP280, HTU21x and more) [(by quen0n)](https://github.com/quen0n/unitemp-flipperzero)
 - BH1750 - Lightmeter [(by oleksiikutuzov)](https://github.com/oleksiikutuzov/flipperzero-lightmeter)
-- iButton Fuzzer [(by xMasterX)](https://github.com/xMasterX/ibutton-fuzzer)
+- **iButton Fuzzer** [(by xMasterX)](https://github.com/xMasterX/ibutton-fuzzer)
 - HEX Viewer [(by QtRoS)](https://github.com/QtRoS/flipper-zero-hex-viewer)
 - POCSAG Pager [(by xMasterX & Shmuma)](https://github.com/xMasterX/flipper-pager)
 
@@ -180,11 +178,7 @@ Games:
 
 ### **Plugins that works with external hardware**
 
-## [- How to use: Temperature Sensor Plugin - HTU21D / SI7021](https://github.com/DarkFlippers/unleashed-firmware/blob/dev/applications/plugins/htu21d_temp_sensor/Readme.md)
-
-## [- How to use: DHT11/22 Temp. Sensor Monitor](https://github.com/quen0n/FipperZero-DHT-Monitor#readme)
-
-## [- How to use: AM2320/AM2321 Temp. Sensor plugin](https://github.com/xMasterX/AM2320_Flipper_Plugin)
+## [- How to use: Unitemp - Temperature sensors reader](https://github.com/quen0n/unitemp-flipperzero#readme)
 
 ## [- How to use: [NMEA] GPS](https://github.com/DarkFlippers/unleashed-firmware/blob/dev/applications/plugins/gps_nmea_uart/README.md)
 

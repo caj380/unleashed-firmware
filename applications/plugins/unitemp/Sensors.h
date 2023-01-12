@@ -323,4 +323,7 @@ const GPIO*
 #include "./sensors/AM2320.h"
 #include "./sensors/DHT20.h"
 #include "./sensors/SHT30.h"
+#include "./sensors/BMP180.h"
+#include "./sensors/HTU21x.h"
+#include "./sensors/HDC1080.h"
 #endif
