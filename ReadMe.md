@@ -71,6 +71,8 @@ Also check the changelog in releases for latest updates!
 - BFT Mitto [External seed calculation required (For info contact me in Discord: Nano#8998)] 
 - Security+ v1 & v2
 - Star Line
+- Somfy Telis (by @assasinfil & @TQMatvey)
+- Somfy Keytis (by @assasinfil)
 
 ## Please support development of the project
 The majority of this project is developed and maintained by me, @xMasterX.
@@ -106,7 +108,7 @@ You can support us by using links or addresses below:
 - WiFi Scanner plugin [(by SequoiaSan)](https://github.com/SequoiaSan/FlipperZero-WiFi-Scanner_Module)
 - MultiConverter plugin [(by theisolinearchip)](https://github.com/theisolinearchip/flipperzero_stuff)
 - USB Keyboard plugin [(by huuck)](https://github.com/huuck/FlipperZeroUSBKeyboard)
-- WAV player plugin (fixed) [(OFW: DrZlo13)](https://github.com/flipperdevices/flipperzero-firmware/tree/zlo/wav-player)
+- WAV Player [(OFW: DrZlo13)](https://github.com/flipperdevices/flipperzero-firmware/tree/zlo/wav-player) - Fixed and improved by [LTVA1](https://github.com/LTVA1/wav_player)
 - Barcode generator plugin [(original by McAzzaMan)](https://github.com/McAzzaMan/flipperzero-firmware/tree/UPC-A_Barcode_Generator/applications/barcode_generator) - [EAN-8 and refactoring](https://github.com/DarkFlippers/unleashed-firmware/pull/154) by @msvsergey
 - GPIO: Sentry Safe plugin [(by H4ckd4ddy)](https://github.com/H4ckd4ddy/flipperzero-sentry-safe-plugin)
 - ESP32: WiFi Marauder companion plugin [(by 0xchocolate)](https://github.com/0xchocolate/flipperzero-firmware-with-wifi-marauder-companion)
@@ -126,6 +128,9 @@ You can support us by using links or addresses below:
 - **iButton Fuzzer** [(by xMasterX)](https://github.com/xMasterX/ibutton-fuzzer)
 - HEX Viewer [(by QtRoS)](https://github.com/QtRoS/flipper-zero-hex-viewer)
 - POCSAG Pager [(by xMasterX & Shmuma)](https://github.com/xMasterX/flipper-pager)
+- Text Viewer [(by kowalski7cc & kyhwana)](https://github.com/kowalski7cc/flipper-zero-text-viewer/tree/refactor-text-app)
+- **UART Terminal** [(by cool4uma)](https://github.com/cool4uma/UART_Terminal/tree/main)
+- **ProtoView** [(by antirez)](https://github.com/antirez/protoview)
 
 Games:
 - DOOM (fixed) [(by p4nic4ttack)](https://github.com/p4nic4ttack/doom-flipper-zero/)
