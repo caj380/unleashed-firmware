@@ -1,7 +1,7 @@
 #pragma once
 
 #include "gpio_app.h"
-#include "gpio_item.h"
+#include "gpio_items.h"
 #include "scenes/gpio_scene.h"
 #include "gpio_custom_event.h"
 #include "usb_uart_bridge.h"
@@ -30,6 +30,7 @@ struct GpioApp {
     GpioTest* gpio_test;
     GpioRead* gpio_read;
     GpioUsbUart* gpio_usb_uart;
+    GPIOItems* gpio_items;
     UsbUartBridge* usb_uart_bridge;
     UsbUartConfig* usb_uart_cfg;
 };
