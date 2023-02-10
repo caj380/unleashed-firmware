@@ -34,3 +34,6 @@
 [submodule "applications/plugins/dap_link/lib/free-dap"]
 	path = applications/plugins/dap_link/lib/free-dap
 	url = https://github.com/ataradov/free-dap.git
+[submodule "applications/plugins/flipper-swd_probe"]
+	path = applications/plugins/flipper-swd_probe
+	url = https://github.com/g3gg0/flipper-swd_probe
