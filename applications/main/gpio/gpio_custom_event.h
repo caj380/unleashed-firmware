@@ -4,7 +4,6 @@ typedef enum {
     GpioStartEventOtgOff = 0,
     GpioStartEventOtgOn,
     GpioStartEventManualControl,
-    GpioStartEventMonitor,
     GpioStartEventUsbUart,
 
     GpioCustomEventErrorBack,
