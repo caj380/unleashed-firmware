@@ -1,34 +1,8 @@
 ### New changes
-* SubGHz: **Fixed bug in SubGHz HAL, now CC1101 shutdowns properly, (also this fixed unstable TX)**
-* SubGHz: GUI Fixes
-* SubGHz: Removed bugged Detect RAW feature, now its replaced with BinRAW
-* Plugins: SubGHz Bruteforcer - Added support for Linear Delta-3 310MHz
-* Plugins: Fix CTRL-SHIFT in mousejacker (by @notmarek | PR #316)
-* Infrared: Update universal remote assets (by @amec0e) (PR #318)
-* OFW: SubGhz: fix cc1101_read_fifo func
-* OFW: feat: add missing `const` qualifiers
-* OFW: **SubGhz: add protocol BinRAW (binarization of data quantized by the minimum correlated duration)**
-* OFW: Picopass: show elite key used from dictionary 
-* OFW: Firmware fixes and improvements for flashing via blackmagic
-* OFW: fbt: building fap_dist for compact gh build; accessor: fixed for latest ibutton changes 
-* OFW: Move CSN space to revent overflow
-* OFW: **SubGhz: add protocol KingGates Stylo4k**
-* OFW: **SubGhz: add protocol Nice One**
-* OFW: **SubGhz: add protocol Alutech at-4n**
-* OFW: **SubGhz: add DOOYA protocol**
-* OFW: **SubGhz: add protocol "Linear Delta-3"**
-* OFW: **SubGhz: Fix Raw write, add short duration filter setting**
-* OFW: Update Missing SD Card icon from PR 2373
-* OFW: SCons: do not include backup files in build
-* OFW: Fix minor UI inconsistencies and bugs
-* OFW: Allow use of any suitable pin for 1-Wire devices
-* OFW: **SD over SPI improvements**
-* OFW: Multitarget support for fbt (includes support for non released yet flipper hardware)
-* OFW: Pin Reset
-* OFW: nfc: Add mifare classic value block commands
-* OFW: battery info temperature shown in C or F based on settings
-* OFW: Script that can find programmer and flash firmware via it.
-* OFW: **SPI Mem Manager C port**
+* Archive and FileBrowser: Fixed #332 (large folders parse issue)
+* Archive and FileBrowser: Fixed navigation issues and improved performance (by @Willy-JL | PR #333)
+* SubGHz -> HAL: **Fixed external CC1101 module issues** (transmission now works correctly) (fixed issue #331)
+* SubGHz: Use 17 (1W) pin for subghz debug mode
 
 #### [🎲 Download latest extra apps pack](https://download-directory.github.io/?url=https://github.com/xMasterX/unleashed-extra-pack/tree/main/apps)
 
